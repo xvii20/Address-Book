@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="address.css"> 
+
+
+    <script src="https://kit.fontawesome.com/79af696280.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+
+
+<h1 class="heading1"> Address Book </h1> 
+ <!-- <p class="testing"> xy</p> -->
+<!--  <button class="check"> check </button>  -->
+<div class="searchbardiv">
+    <div class="innersearchbardiv">
+  <!--  <i class="fa fa-magnifying-glass"></i>  -->
+    
+    <input type="search" class="searchbar" placeholder="Search..." >
+    <button class="searchbutton"> Search </button>
+</div>
+</div>
+
+<div class="buttondiv">
+<button class="contactbtn">  <i class="fa-sharp fa-solid fa-plus"></i>Add Contact</button>
+</div>
+
+
+<div class="tablediv">
+    <table class="table">
+        <tr>
+     <!----     <th class="rowid">ID</th>  -->
+          <th class="trf"> <p class="tableheading"> First Name </p></th>
+          <th class="trf"> <p class="tableheading"> Last Name </p> </th>
+          <th class="trf"><p class="tableheading">  Phone Number </p></th>
+          <th class="trf"><p class="tableheading">Address <p></th>
+          <th > <button class="deleteall">Delete All </button> </th>
+        </tr>
+</table>
+<div class="darkoverlay">  
+
+<div class="contactmodal">  
+
+ 
+    <div class="contactmodalbanner"> 
+        
+        <h1 class="modalheading">
+             Contact Details 
+        </h1> 
+        <i class="fas fa-circle-xmark"></i>
+    </div>
+
+    <div class="formdiv"> 
+    <form class="form" action="/action_page.php">
+        <div class="fnamediv">
+        <label for="fname" class="labelforfname">First name:</label><br>
+        <input type="text" class="fname" name="fname"  placeholder="First Name" required>
+    </div>
+
+    <div class="lnamediv">
+        <label for="lname" class="labelforlname">Last name:</label><br>
+        <input type="text" class="lname" name="lname"  placeholder="Last Name" required>
+    </div>
+
+    <div class="phonediv">
+        <label for="phonenumber" class="labelforphone">Phone Number</label><br>
+        <input type="text" class="phonenumber" name="phonenumber" placeholder="Phone Number" required>
+    </div>
+
+    <div class="addressdiv">
+        <label for="addresslabel" class="labelforaddress">Address:</label><br>
+        <input type="text" class="address" name="address" placeholder="Address" required>
+    </div>
+
+  
+
+      </form> 
+      
+    </div>
+
+    <button class="submitbtn"> Add</button>
+
+</div>
+</div>
+   <!--  EDIT MODAL CODE  (for when user clicks on a table row and wants to delete or edit the row data) -->
+    <div class="editcontactmodal">  
+        <div class="contactmodalbanner"> 
+            
+            <h1 class="modalheading">
+                Edit Contact Details 
+            </h1> 
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    
+        <div class="formdiv"> 
+        <form class="form">
+            <div class="fnamediv">
+            <label for="editfname" class="labelforfname">First name:</label><br>
+            <input type="text" class="editfname" name="editfname"    placeholder="First Name" required>
+        </div>
+    
+        <div class="lnamediv">
+            <label for="editlname" class="labelforlname">Last name:</label><br>
+            <input type="text" class="editlname" name="editlname"  placeholder="Last Name" required>
+        </div>
+    
+        <div class="phonediv">
+            <label for="editphonenumber" class="labelforphone">Phone Number</label><br>
+            <input type="text" class="editphonenumber" name="editphonenumber" placeholder="Phone Number" required>
+        </div>
+    
+        <div class="addressdiv">
+            <label for="editaddress" class="labelforaddress">Address:</label><br>
+            <input type="text" class="editaddress" name="editaddress" placeholder="Address" required>
+        </div>
+    
+      
+    
+          </form> 
+          
+        </div>
+    
+        <button class="editbtn"> Edit Contact </button>
+  
+    
+    </div>
+
+</div>  
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" ></script>
+<script type="module"  src="addressbook.js" defer></script>
+</body>
+</html>
